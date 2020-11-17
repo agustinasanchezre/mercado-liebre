@@ -9,12 +9,12 @@ app.get("/newsletter",function(req,res){
     res.sendFile(__dirname + "/views/newsletter.html")
 })
 
-app.get("/registro",function(req,res){
-    res.sendFile(__dirname + "/views/registro.html")
+app.get("/register",function(req,res){
+    res.sendFile(__dirname + "/views/register.html")
 })
 
-app.get("/ingreso",function(req,res){
-    res.sendFile(__dirname + "/views/ingreso.html")
+app.get("/login",function(req,res){
+    res.sendFile(__dirname + "/views/login.html")
 })
 
 app.get("*",function(req,res){

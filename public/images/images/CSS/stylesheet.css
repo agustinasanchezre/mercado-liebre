@@ -1,0 +1,14 @@
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.logo{
+    width: 50%;
+    background-color: yellow;
+}
+.buscar{
+    width: 50%;
+}
+
