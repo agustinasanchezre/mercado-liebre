@@ -1,14 +1,161 @@
-*{
+* {
     box-sizing: border-box;
+    width: 100%;
     margin: 0 auto;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header{
+    padding: 10px 10px 10px 10px;
+    background-color:#EAC926;
+    margin-bottom: 10px;
 }
 
 .logo{
+    background-color:#EAC926;
     width: 50%;
-    background-color: yellow;
 }
+
 .buscar{
     width: 50%;
 }
 
+.barra-busqueda{
+    background-color:#EAC926;
+}
+
+.search-button{
+    width: 25px;
+}
+
+.barra-navegacion{
+    display: none;
+}
+
+.menu-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #0044AA;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.menu-button:hover{
+    background-color: #0022AA;
+    cursor:pointer;
+}
+
+.banner{
+    display: block;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.titulos-h2{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 90%;
+    margin-right:auto;
+    margin-left: auto;
+    color: #666;
+}
+
+.parrafo{
+    font-size: 12px;
+    color: #666;
+}
+
+.container-ult-visita{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ebebeb;
+}
+
+.container-ofertas{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ebebeb;
+}
+
+.articulo{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 15px 15px 15px 15px;
+}
+
+.icono-envio{
+    color: rgb(4, 189, 4);
+}
+
+.descuento{
+    color: rgb(105, 189, 105);
+}
+
+.titulos-h5{
+    color: #666;
+}
+
+.footer{
+    font-size: 10px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.articulo-footer{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.icono{
+    color: #0022AA;
+}
+
+.titulos-h4{
+    font-size: 24px;
+}
+
+.formulario{
+    background-color: #ebebeb;
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+}
+
+.input{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.ingresar-button{
+    background-color: #0044AA;
+    color: white;
+    border-style: none;
+    border-radius: 5px;
+}
+
+.ingresar-button:hover{
+    background-color: #0022AA;
+}
+
+.reset-button{
+    background-color: #AA0044;
+    color: white;
+    border-style: none;
+    border-radius: 5px;
+}
+
+.reset-button:hover{
+    background-color: #CC1155;
+}
+
+.texto-footer{
+    color: #666;
+}

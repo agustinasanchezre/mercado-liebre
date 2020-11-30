@@ -3,63 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="../images/images/CSS/stylesheet.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title>ML | Ingreso</title>
 </head>
 <body>
 <main>
-    <header>
-        <div>
+    <header class="header">
+        <div class="logo">
             <img src = "/images/images/logo-mercado-liebre.svg" alt = "Logo ML">        
         </div>
-        <div>
-            <p>
-                <input type="search" placeholder="Buscar productos, marcas, ..."><button><i class="fas fa-search"></i></button>
-            </p>
-            <p>
+        <div class="barra-busqueda">
+            <input class="buscar" type="search" placeholder="Buscar productos, marcas, ...">
+            <button class="search-button"><i class="fas fa-search"></i></button>    
+            <br>
+            <i class="fas fa-user"></i>
+            <p class="parrafo">
                 Comprá en cuotas y sin tarjeta de crédito
             </p>
         </div>
-        <div>
-            <ul>
+        <div class="barra-navegacion">
+            <ul style="list-style: none;">
                 <li><a href="">Ofertas</a></li>
                 <li><a href="">Tiendas oficiales</a></li>
                 <li><a href="">Vender</a></li>
                 <li><a href="">Ayuda</a></li>
             </ul>
-            <ul>
+            <br><br>
+            <ul style="list-style: none;">
                 <li><a href="register">Creá tu cuenta</a></li>
+                <i class="far fa-id-card"></i>
                 <li><a href="login">Ingresá</a></li>
+                <i class="fas fa-sign-in-alt"></i>
                 <li><a href="">Mis compras</a></li>
+                <i class="fas fa-shopping-basket"></i>
             </ul>
+        </div>
+        <div>
+            <button class="menu-button"><i class="fas fa-bars"></i></button>
         </div>
     </header>
     <main>
     <form action="index.html" method="POST">
-        <div>
+        <div class="formulario">
             <h2>¡Ingresá con tu cuenta!</h2>
             <label for="usuario">Nombre de usuari@ o e-mail</label><br>
-            <input type="text" id="usuario" name="Nombre de usuari@"><br><br>
+            <input class="input" type="text" id="usuario" name="Nombre de usuari@" placeholder="Nombre de usuari@ o e-mail"><br><br>
 
             <label for="Contraseña">Contraseña</label><br>
-            <input type="password" id="Contraseña" name="Contraseña"><br><br>
+            <input class="input" type="password" id="Contraseña" name="Contraseña" placeholder="Contraseña"><br><br>
 
-            <button type="submit">Ingresar</button>
-
+            <button class="ingresar-button" type="submit">Ingresar</button>
         </div>
     </form>  
     </main>  
-    <footer>
-        <article>
-            <h4>Pagá con tarjeta o en efectivo</h4>
-            <p>Con MercadoLiebreCash tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
+    <br>
+    <footer class="footer">
+        <article class="articulo-footer">
+            <i class="icono fas fa-credit-card"></i>
+            <h4 class="titulos-h4">Pagá con tarjeta o en efectivo</h4>
+            <p class="texto-footer">Con MercadoLiebreCash tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
         </article>
-        <article>
-            <h4>Envío gratis desde los $2500</h4>
-            <p>Sólo por estar registrad@ en MercadoLiebre tenés envíos gratis en miles de productos. Es un beneficio de MercadoPuntos</p>
+        <article class="articulo-footer">
+            <i class="icono fas fa-gift"></i>
+            <h4 class="titulos-h4">Envío gratis desde los $2500</h4>
+            <p class="texto-footer">Sólo por estar registrad@ en MercadoLiebre tenés envíos gratis en miles de productos. Es un beneficio de MercadoPuntos</p>
         </article>
-        <article>
-            <h4>Seguridad de principio a fin</h4>
-            <p>¿No te gusta? ¡Devolvelo! En MercadoLiebre no hay nada que no puedas hacer porque estás siempre protegid@</p>
+        <article class="articulo-footer">
+            <i class="icono fas fa-user-shield"></i>
+            <h4 class="titulos-h4">Seguridad de principio a fin</h4>
+            <p class="texto-footer">¿No te gusta? ¡Devolvelo! En MercadoLiebre no hay nada que no puedas hacer porque estás siempre protegid@</p>
         </article>
         <div>
             <h6>Copyright © 1999-2019 MercadoLiebre S.R.L</h6>
