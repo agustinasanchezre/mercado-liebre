@@ -5,13 +5,15 @@
     margin: 0 auto;
     padding: 0;
     font-family: 'Roboto', sans-serif;
-    justify-content: center;
 }
 
 /*HEADER*/
 .header{
+    display: flex;
+    flex-wrap: wrap;
     padding: 10px 10px 10px 10px;
     background-color:#EAC926;
+    justify-content: center;
 }
 
 .navbar{
@@ -23,7 +25,6 @@
 }
 
 .logo{
-    background-color:#EAC926;
     width: 45%;
 }
 
@@ -32,7 +33,6 @@
     border: none;
     outline: none;
     border-radius: 5px;
-
 }
 
 .barra-busqueda{
@@ -54,25 +54,27 @@
     outline: none;
 }
 
+.msj-encabezado{
+    text-align: center;
+    padding: 8px;
+}
+
+.fa-hand-holding-usd{
+    width: fit-content;
+}
+
+.msj-cuotas{
+    display: inline;
+    width: fit-content;
+    font-size: 12px;
+}
+
 .menu{
     display: none;
 }
 
-.msj-encabezado{
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-}
-
-.fas{
-    display: flex;
-    flex-wrap: wrap;
-}
-
 .menu-button{
     display: flex;
-    justify-content: center;
     align-items: center;
     width: 10%;
     height: 40px;
@@ -82,6 +84,7 @@
     border-radius: 5px;
     margin-top: 20px;
     margin-bottom: 20px;
+    padding: 2.5%;
 }
 
 .menu-button:hover{
@@ -105,6 +108,7 @@
     font-size: 2em;
     color: #0022AA;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .titulos-h4{
@@ -120,14 +124,17 @@
 }
 
 .copyright{
+    padding-top: 2em;
     color: #666;
-    font-size: 10px;
+    font-size: 12px;
 }
 
 /*CONTENIDO*/
 .banner{
     display: none;
     width: 100%;
+    margin: 0%;
+    padding: 0;
 }
 
 .titulos-h2{
@@ -138,47 +145,19 @@
     color: #666;
 }
 
-.parrafo{
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 12px;
-    color: #666;
-}
-
-
 /* --> home*/
 
 .container-ult-visita{
-    display: flex;
-    flex-wrap: wrap;
     background-color: #ebebeb;
 }
 
 .container-ofertas{
-    display: flex;
-    flex-wrap: wrap;
     background-color: #ebebeb;
 }
 
-/*.precio-y-desc{
+.productos{
     display: flex;
     flex-wrap: wrap;
-}
-
-.precio{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.descuento{
-    display: flex;
-    flex-wrap: wrap;
-    color: rgb(105, 189, 105);
-}
-*/
-
-.image{
-    border-bottom: gray solid 1px;
 }
 
 .articulo{
@@ -188,27 +167,69 @@
     border-radius: 5px;
 }
 
+.image{
+    border-bottom: rgb(197, 197, 197) solid 1px;
+}
+
+.precio-desc{
+    display: flex;
+    align-items: center;
+}
+
+.precio{
+    padding-left: 10px;
+    width: fit-content;
+    font-weight: 800;
+    font-size: 1.3em;
+}
+
+.descuento{
+    padding-right: 10px;
+    width: fit-content;
+    color: rgb(105, 189, 105);
+    font-weight: 500;
+}
+
+.fa-truck{
+    color: rgb(4, 189, 4);
+    border: rgb(4, 189, 4) solid 0.5px;
+    border-radius: 100%;
+    padding:5px;
+    width: fit-content;
+    position: relative;
+    left: 85%;
+    bottom: 4%;
+    transition: transform 2s;
+}
+
+h5{
+    display: none;
+    font-weight: lighter;
+    font-size: 18px;
+    color: #666;
+    padding: 10px;
+    margin-top: 12px;
+    margin-left: 12px;
+}
+
 .articulo:hover{
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
 
-.icono-envio{
-    color: rgb(4, 189, 4);
+.articulo:hover .fa-truck{
+    transform: rotateZ(-90deg);
 }
 
-
-.titulos-h5{
-    display: none;
-    color: #666;
-}
-
-.articulo:hover{
-    display: block;
+.articulo:hover h5{
+    display: flex;
 }
 
 /* --> formularios*/
 
 .formulario{
+    padding: 10%;
+    margin-left: 15%;
+    margin-right: 15%;
     background-color: #ebebeb;
     margin: 10px 10px 10px 10px;
     padding: 10px 10px 10px 10px;
@@ -217,6 +238,8 @@
 .input{
     width: 100%;
     border-radius: 5px;
+    padding: 5px;
+    border: gray 0.5px solid;
 }
 
 .ingresar-button{
@@ -224,6 +247,8 @@
     color: white;
     border-style: none;
     border-radius: 5px;
+    width: 25%;
+    height: 2em;
 }
 
 .ingresar-button:hover{
@@ -235,6 +260,8 @@
     color: white;
     border-style: none;
     border-radius: 5px;
+    width: 25%;
+    height: 2em;
 }
 
 .reset-button:hover{
@@ -245,7 +272,7 @@
 
 @media(min-width:768px){
     .logo{
-        width: 15%;
+        width: 25%;
     }
 
     .barra-busqueda{
@@ -254,11 +281,11 @@
     }
 
     .msj-encabezado{
-        width: 20%;
+        width: 25%;
     }
 
     .navbar{
-        width: 80%;
+        width: 90%;
         justify-content: space-between;
         margin: 0 auto;
     }
@@ -268,20 +295,52 @@
     }
 
     .menu{
-        display: block;
-        width: 100%;
+        display: flex;
         padding:10px;
-        justify-content: space-between;
+
+    }
+
+    .links-uno{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: fit-content;
+    }
+    
+    .links-dos{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: fit-content;
     }
     
     .banner{
         display: block;
     }
 
+    .msjs-footer{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    
+    .titulos-h4{
+        color: rgb(78, 77, 77);
+        font-size: 20px;
+        text-align: center;
+    }
+
     .productos{
         display: flex;
-        flex-wrap: wrap;
-        width: 80%;
+        flex-wrap: nowrap;
+        width: 95%;
         margin: 0 auto;
     }
+
+    /* --> formularios*/
+
+    .input{
+    width: 50%;
+    border-radius: 5px;
+    }
+    
 }

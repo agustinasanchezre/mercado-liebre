@@ -10,51 +10,51 @@
     <title>ML | Registro</title>
 </head>
 <body>
-<main>
     <header class="header">
+        <div class="navbar">
         <div class="logo">
             <img src = "/images/images/logo-mercado-liebre.svg" alt = "Logo ML">        
         </div>
         <div class="barra-busqueda">
             <input class="buscar" type="search" placeholder="Buscar productos, marcas, ...">
-            <button class="search-button"><i class="fas fa-search"></i></button>    
-            <br>
-            <i class="fas fa-user"></i>
-            <p class="parrafo">
+            <button class="search-button"><i class="fas fa-search"></i></button>
+        </div>
+        <div class="msj-encabezado">
+            <i class="fas fa-hand-holding-usd"></i>
+            <p class="msj-cuotas">
                 Comprá en cuotas y sin tarjeta de crédito
             </p>
         </div>
-        <div class="barra-navegacion">
-            <ul style="list-style: none;">
-                <li><a href="">Ofertas</a></li>
-                <li><a href="">Tiendas oficiales</a></li>
-                <li><a href="">Vender</a></li>
-                <li><a href="">Ayuda</a></li>
-            </ul>
-            <br><br>
-            <ul style="list-style: none;">
-                <li><a href="register">Creá tu cuenta</a></li>
-                <i class="far fa-id-card"></i>
-                <li><a href="login">Ingresá</a></li>
-                <i class="fas fa-sign-in-alt"></i>
-                <li><a href="">Mis compras</a></li>
-                <i class="fas fa-shopping-basket"></i>
-            </ul>
+        </div>
+        <div class="menu">
+            <div class="links-uno">
+                <a href="">Ofertas</a>
+                <a href="">Tiendas oficiales</a>
+                <a href="">Vender</a>
+                <a href="">Ayuda</a>
+            </div>
+    
+            <div class="links-dos">
+                <a href="register">Creá tu cuenta</a><i class="far fa-id-card"></i>
+                <a href="login">Ingresá</a><i class="fas fa-sign-in-alt"></i>
+                <a href="">Mis compras</a><i class="fas fa-shopping-basket"></i>
+            </div>
         </div>
         <div>
             <button class="menu-button"><i class="fas fa-bars"></i></button>
         </div>
     </header>
     <main>
-    <form class="formulario" action="index.html" method="POST">
-        <div>
+    <form action="index.html" method="POST">
+        <div class="formulario">
+            <h2>¡Registrate!</h2><br>
             <label for="nombre y apellido">Nombre y apellido</label>
             <input class="input" type="text" id="nombre y apellido" name="Nombre y apellido" placeholder="Nombre y apellido"><br><br>
 
             <label for="usuario">Nombre de usuari@</label>
             <input class="input" type="text" id="usuario" name="Nombre de usuari@" placeholder="Nombre de usuari@"><br><br>
 
-            <label for="email">Email</label>
+            <label for="email">E-mail</label>
             <input class="input" type="email" id="email" name="email" placeholder="E-mail"><br><br>
 
             <label for="nacimiento">Fecha de nacimiento</label>
@@ -63,12 +63,12 @@
             <label for="domicilio">Domicilio</label>
             <input class="input" type="text" id="domicilio" name="domicilio" placeholder="Domicilio"><br><br>
 
-            <label for="">Perfil de usuario</label><br>
+            <label for="">Perfil de usuario</label>
             <input type="radio" name="perfil" value="Comprador">Comprador
             <input type="radio" name="perfil" value="Vendedor">Vendedor
             <br><br>
 
-            <label for=""><h4>Intereses</h4></label><br>
+            <label for="">Intereses</label>
             <input type="checkbox" name="Intereses" value="Electro">Electro <br>
             <input type="checkbox" name="Intereses" value="Moda">Moda <br>
             <input type="checkbox" name="Intereses" value="Hogar">Hogar <br>
@@ -81,15 +81,14 @@
             <br><br>
 
             <label for="contraseña">Contraseña</label><br>
-            <input type="password" id="contraseña" name="contraseña" placeholder="Elegí tu contraseña"><br>
-            <input type="password" id="contraseña" name="contraseña" placeholder="Confirmá tu contraseña"><br>
+            <input type="password" id="contraseña" name="contraseña" placeholder="Elegí tu contraseña"><br><br>
+            <input type="password" id="contraseña" name="contraseña" placeholder="Confirmá tu contraseña"><br><br>
             <button class="ingresar-button" type="submit">Enviar</button>
             <button class="reset-button" type="reset">Borrar</button>
         </div>
     </form>
-    </main>
-    <br>
     <footer class="footer">
+        <div class="msjs-footer">
         <article class="articulo-footer">
             <i class="icono fas fa-credit-card"></i>
             <h4 class="titulos-h4">Pagá con tarjeta o en efectivo</h4>
@@ -105,10 +104,10 @@
             <h4 class="titulos-h4">Seguridad de principio a fin</h4>
             <p class="texto-footer">¿No te gusta? ¡Devolvelo! En MercadoLiebre no hay nada que no puedas hacer porque estás siempre protegid@</p>
         </article>
-        <div>
-            <h6>Copyright © 1999-2019 MercadoLiebre S.R.L</h6>
         </div>
-        </footer>
-</main>
+        <div>
+            <h6 class="copyright">Copyright © 1999-2019 MercadoLiebre S.R.L</h6>
+        </div>
+    </footer>
 </body>
 </html>
